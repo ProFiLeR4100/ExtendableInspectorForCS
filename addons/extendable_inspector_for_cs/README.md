@@ -16,11 +16,11 @@ Go to Project Settings > Plugins, and enable Extendable Inspector.
 
 Let's add a button that prints the node name in godot's output:
 - Choose the node that should have this control, make sure its script has the `@tool` annotation at the beginning, [this allows it to run code while in the editor](https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_editor.html).
-![image](https://github.com/Fanny-Pack-Studios/ExtendableInspector/assets/11432672/7c84f2c1-e64f-40ee-a3f0-ef6f858eb78f)
+![image](https://github.com/ProFiLeR4100/ExtendableInspectorForCS/assets/11432672/7c84f2c1-e64f-40ee-a3f0-ef6f858eb78f)
 - Define a method called `_extend_inspector_begin` that receives a parameter, let's call that parameter `inspector`. If you want, you can type it as `ExtendableInspector` to get some autocomplete features:
-![image](https://github.com/Fanny-Pack-Studios/ExtendableInspector/assets/11432672/65f90976-adeb-4607-9d58-46fa214c2f0f)
+![image](https://github.com/ProFiLeR4100/ExtendableInspectorForCS/assets/11432672/65f90976-adeb-4607-9d58-46fa214c2f0f)
 - Create a button that when pressed, it prints the node's name. Then, simply add it to the inspector with `inspector.add_custom_control(a_control)`. You will have to unfocus the node and focus it again for the button to appear:
-![image](https://github.com/Fanny-Pack-Studios/ExtendableInspector/assets/11432672/2d4e62ef-7dcf-4cc5-b74c-c26bde55c70a)
+![image](https://github.com/ProFiLeR4100/ExtendableInspectorForCS/assets/11432672/2d4e62ef-7dcf-4cc5-b74c-c26bde55c70a)
 
 # How to use
 
@@ -55,7 +55,7 @@ Allows adding property-specific editors to the property list for object. The add
 
 ## Examples
 
-Examples can be found in the [example folder](https://github.com/Fanny-Pack-Studios/ExtendableInspector/tree/godot-4/addons/extendable_inspector/example)
+Examples can be found in the [example folder](https://github.com/ProFiLeR4100/ExtendableInspectorForCS/tree/godot-4/addons/extendable_inspector/example)
 
 ## Utils
 
