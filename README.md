@@ -2,9 +2,9 @@
 
 Makes it easier to add custom inspector controls to nodes.
 
-![Screenshot showing the example code in res://addons/extendable_inspector_for_cs/example/ChangeRandomColor/ChangeRandomColor.cs](https://user-images.githubusercontent.com/11432672/215778616-963d902e-acc8-493c-969d-3544926a4904.png)
-![3d scene of a cube with a button in the inspector that says 'Change Random Color'](https://user-images.githubusercontent.com/11432672/215778698-f09496c1-a9ff-4a60-99d0-2ae5cee6ab71.png)
-![3d scene of same cube with a button in the inspector that says 'Change Random Color' but now the cube is of a different color](https://user-images.githubusercontent.com/11432672/215778730-78761e6d-5232-425f-acf8-1f34c5e7e614.png)
+![Screenshot showing the example code in res://addons/extendable_inspector_for_cs/example/ChangeRandomColor/ChangeRandomColor.cs](https://github.com/ProFiLeR4100/ExtendableInspectorForCS/assets/9364958/acb2336e-532b-4bf7-9700-0c3d2c444fb8)
+![3d scene of a cube with a button in the inspector that says 'Change To Random Color'](https://github.com/ProFiLeR4100/ExtendableInspectorForCS/assets/9364958/16db2d8e-3ee2-4489-98a3-158bb2b22ba2)
+![3d scene of a cube with a button in the inspector that says 'Change To Random Color' but now the cube is of a different color](https://github.com/ProFiLeR4100/ExtendableInspectorForCS/assets/9364958/5bb39e97-5d02-4f9a-a388-2e6755cd9d54)
 
 # How to install
 
