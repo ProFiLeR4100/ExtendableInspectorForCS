@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctp20bfwuqytg"]
+
+[ext_resource type="Script" path="res://addons/extendable_inspector_for_cs/example/SayYourName/SayYourName.cs" id="1_l477p"]
+
+[node name="Node2DWithName" type="Node2D"]
+script = ExtResource("1_l477p")
