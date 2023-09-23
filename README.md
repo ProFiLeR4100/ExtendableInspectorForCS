@@ -16,10 +16,15 @@ Go to Project Settings > Plugins, and enable Extendable Inspector (C#).
 
 Let's add a button that prints the node name in godot's output:
 - Choose the node that should have this control, make sure its script has the `[Tool]` attribute at the class declaration, [this allows it to run code while in the editor](https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_editor.html).
+
 ![image](https://github.com/ProFiLeR4100/ExtendableInspectorForCS/assets/9364958/7f0cc7e0-6a9a-4447-b73e-8fc9a0f8da6b)
+
 - Define a method called `ExtendInspectorBegin` that receives a parameter, let's call that parameter `inspector`. If you want, you can type it as `ExtendableInspector` to get some autocomplete features:
+
 ![image](https://github.com/ProFiLeR4100/ExtendableInspectorForCS/assets/9364958/e6ff7696-ab1c-484c-ae1e-04b75da80f47)
+
 - Create a button that when pressed, it prints the node's name. Then, simply add it to the inspector with `inspector.AddCustomControl(ourNewControl)`. You will have to unfocus the node and focus it again for the button to appear:
+
 ![image](https://github.com/ProFiLeR4100/ExtendableInspectorForCS/assets/9364958/d8457afd-5243-4da9-9834-b87c90f356bb)
 
 
