@@ -1,6 +1,6 @@
 using Godot;
 
-[GlobalClass, Tool]
+[Tool]
 public partial class ChangeRandomColor : Node {
 	public void ChangeToRandomColor() {
 		CsgBox3D box = GetNode<CsgBox3D>("CSGBox3D");

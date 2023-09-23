@@ -1,6 +1,6 @@
 using Godot;
 
-[GlobalClass, Tool]
+[Tool]
 public partial class SpiralCurveCreator : Node3D {
 	[Export] public float Radius { get; set; } = 5;
 
@@ -11,7 +11,7 @@ public partial class SpiralCurveCreator : Node3D {
 	Path3D path;
 
 	public void DrawEspiral() {
-		Curve3D curve = GetPath().Curve;
+		Curve3D curve = GetPathNode().Curve;
 		curve.ClearPoints();
 		float angle = 0;
 		float y = 0;
@@ -26,7 +26,7 @@ public partial class SpiralCurveCreator : Node3D {
 		}
 	}
 
-	private Path3D GetPath() {
+	private Path3D GetPathNode() {
 		if (!HasNode("Path3D")) {
 			Path3D path = new Path3D();
 			AddChild(path);
