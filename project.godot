@@ -11,11 +11,15 @@ config_version=5
 [application]
 
 config/name="ExtendableInspector"
-config/features=PackedStringArray("4.1")
+config/features=PackedStringArray("4.2", "C#")
+
+[dotnet]
+
+project/assembly_name="ExtendableInspector"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/extendable_inspector/plugin.cfg")
+enabled=PackedStringArray("res://addons/extendable_inspector_for_cs/plugin.cfg")
 
 [filesystem]
 
