@@ -10,7 +10,7 @@ public partial class SpiralCurveCreator : Node3D {
 
 	Path3D path;
 
-	public void DrawSpiral() {
+	public void DrawEspiral() {
 		Curve3D curve = GetPath().Curve;
 		curve.ClearPoints();
 		float angle = 0;
@@ -39,9 +39,9 @@ public partial class SpiralCurveCreator : Node3D {
 
 	public void ExtendInspectorBegin(ExtendableInspector inspector) {
 		Button button = new() {
-			Text = "Draw Spiral"
+			Text = "Draw Espiral"
 		};
-		button.Pressed += DrawSpiral;
+		button.Pressed += DrawEspiral;
 		inspector.AddCustomControl(button);
 	}
 }
