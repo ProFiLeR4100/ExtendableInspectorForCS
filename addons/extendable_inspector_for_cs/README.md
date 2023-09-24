@@ -66,6 +66,12 @@ void ExtendInspectorEnd(ExtendableInspector inspector)
 Allows adding controls at the end of the inspector.
 
 ```csharp
+void ExtendInspectorGroup(inspector: ExtendableInspector, string group)
+```
+
+Allows adding controls at the beginning of a group in the property list for object.
+
+```csharp
 void ExtendInspectorCategory(inspector: ExtendableInspector, string category)
 ```
 

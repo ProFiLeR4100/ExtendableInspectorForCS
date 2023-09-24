@@ -8,6 +8,7 @@ public partial class ExtendableInspector : EditorInspectorPlugin {
 	private static string[] Methods = {
 		"ExtendInspectorBegin",
 		"ExtendInspectorEnd",
+		"ExtendInspectorGroup",
 		"ExtendInspectorProperty",
 		"ExtendInspectorCategory"
 	};
@@ -47,6 +48,12 @@ public partial class ExtendableInspector : EditorInspectorPlugin {
 		}
 
 		return false;
+	}
+
+	public override void _ParseGroup(GodotObject godotObject, string group) {
+		if (godotObject.HasMethod("ExtendInspectorGroup")) {
+			godotObject.Call("ExtendInspectorGroup", this, group);
+		}
 	}
 }
 #endif
