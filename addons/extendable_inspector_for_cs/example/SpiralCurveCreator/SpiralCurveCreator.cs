@@ -37,6 +37,7 @@ public partial class SpiralCurveCreator : Node3D {
 		return GetNode<Path3D>("Path3D");
 	}
 
+	#if TOOLS
 	public void ExtendInspectorBegin(ExtendableInspector inspector) {
 		Button button = new() {
 			Text = "Draw Espiral"
@@ -44,4 +45,5 @@ public partial class SpiralCurveCreator : Node3D {
 		button.Pressed += DrawEspiral;
 		inspector.AddCustomControl(button);
 	}
+	#endif
 }

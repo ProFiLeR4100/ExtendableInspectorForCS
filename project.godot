@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="ExtendableInspector"
+run/main_scene="res://addons/extendable_inspector_for_cs/example/SayYourName/SayYourName.tscn"
 config/features=PackedStringArray("4.2", "C#")
 
 [dotnet]

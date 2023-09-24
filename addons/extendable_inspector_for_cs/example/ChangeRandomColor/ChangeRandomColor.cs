@@ -8,6 +8,7 @@ public partial class ChangeRandomColor : Node {
 		material.AlbedoColor = new Color(GD.Randf(), GD.Randf(), GD.Randf());
 	}
 
+	#if TOOLS
 	public void ExtendInspectorBegin(ExtendableInspector inspector) {
 		Button button = new() {
 			Text = "Change To Random Color"
@@ -15,4 +16,5 @@ public partial class ChangeRandomColor : Node {
 		button.Pressed += ChangeToRandomColor;
 		inspector.AddCustomControl(button);
 	}
+	#endif
 }
